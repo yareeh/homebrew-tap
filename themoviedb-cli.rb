@@ -5,23 +5,23 @@
 class ThemoviedbCli < Formula
   desc "CLI for The Movie Database (TMDB), designed for agentic use with AI assistants"
   homepage "https://github.com/yareeh/themoviedb-cli"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yareeh/themoviedb-cli/releases/download/v1.0.0/themoviedb-cli_darwin_amd64.tar.gz"
-      sha256 "435cb32c3e9677fab4eff571047acc4d9c6b427e4c020d5853fda399824a96f0"
+      url "https://github.com/yareeh/themoviedb-cli/releases/download/v1.1.0/themoviedb-cli_darwin_amd64.tar.gz"
+      sha256 "f289d38f85af8ae3127b57b54401ee952e56b346ce71d830f38a8f48e41873db"
 
-      def install
+      define_method(:install) do
         bin.install "themoviedb-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yareeh/themoviedb-cli/releases/download/v1.0.0/themoviedb-cli_darwin_arm64.tar.gz"
-      sha256 "ecc1652ed65821d9035ca1134549b1cd86ebec6c0aae8e2af56aca081d08b66d"
+      url "https://github.com/yareeh/themoviedb-cli/releases/download/v1.1.0/themoviedb-cli_darwin_arm64.tar.gz"
+      sha256 "9c873278216e14ee1d33c5bdb6c8f8e9ada7cd540cd20ad0596291447e1b9e17"
 
-      def install
+      define_method(:install) do
         bin.install "themoviedb-cli"
       end
     end
@@ -29,16 +29,16 @@ class ThemoviedbCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yareeh/themoviedb-cli/releases/download/v1.0.0/themoviedb-cli_linux_amd64.tar.gz"
-      sha256 "d30339e5811c6fe921dd3ef891943a668c8f9177cefd745506440facfc198f26"
-      def install
+      url "https://github.com/yareeh/themoviedb-cli/releases/download/v1.1.0/themoviedb-cli_linux_amd64.tar.gz"
+      sha256 "610e554ec571831393d1ca2b24000139a9ea16ee2c1811fb3f6b4a690214fbe8"
+      define_method(:install) do
         bin.install "themoviedb-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yareeh/themoviedb-cli/releases/download/v1.0.0/themoviedb-cli_linux_arm64.tar.gz"
-      sha256 "31b04617844bffe32babdb34c6273059b2070cb88f89b6cdfb01412ccc8547e9"
-      def install
+      url "https://github.com/yareeh/themoviedb-cli/releases/download/v1.1.0/themoviedb-cli_linux_arm64.tar.gz"
+      sha256 "e0a72f615f2757de1a161339e59207917a3512c9d3dd42e0bcc497fd9f0998cc"
+      define_method(:install) do
         bin.install "themoviedb-cli"
       end
     end
