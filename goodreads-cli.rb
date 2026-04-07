@@ -11,7 +11,7 @@ class GoodreadsCli < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/yareeh/goodreads-cli/releases/download/v1.3.0/goodreads-cli_darwin_amd64.tar.gz"
-      sha256 "aba32dc6dec4897acb59e18f338c46c435b585bdcbe5dc3291213160f467b60f"
+      sha256 "7c4d410a4ba0d59c18880dec03c9860a9aac7c458df872f34a785269cc08e626"
 
       define_method(:install) do
         bin.install "goodreads-cli"
@@ -19,7 +19,7 @@ class GoodreadsCli < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/yareeh/goodreads-cli/releases/download/v1.3.0/goodreads-cli_darwin_arm64.tar.gz"
-      sha256 "aa30cb3a99622bcbc8a10b2927071f42b1415cd294fe1116c8de5ecb192dbe57"
+      sha256 "0f232836ccb66673a3f750de0aa9435d950d6716880c988e6b86f6d8df3fd3ed"
 
       define_method(:install) do
         bin.install "goodreads-cli"
@@ -30,14 +30,14 @@ class GoodreadsCli < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/yareeh/goodreads-cli/releases/download/v1.3.0/goodreads-cli_linux_amd64.tar.gz"
-      sha256 "1b8beeba3ab7ce001fb461d0bc300fb248d50d5e48a4e38d1552bf4f96fe66c0"
+      sha256 "5668aabfe5c6f3c0ae40910faae4cf087fb39ee1c5b1f024edf75284f2caa775"
       define_method(:install) do
         bin.install "goodreads-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/yareeh/goodreads-cli/releases/download/v1.3.0/goodreads-cli_linux_arm64.tar.gz"
-      sha256 "3e9a56477e415be768fbfd6a835c35c2620151e29896c77bb61ba65cc63f5eea"
+      sha256 "5de8a3a197d5eeba1803efdad89b33268bd69211ab90744307dbb51462a5ac2a"
       define_method(:install) do
         bin.install "goodreads-cli"
       end
