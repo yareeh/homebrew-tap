@@ -5,21 +5,21 @@
 class GoodreadsCli < Formula
   desc "CLI for Goodreads with browser automation for login and shelf operations"
   homepage "https://github.com/yareeh/goodreads-cli"
-  version "1.4.4"
+  version "1.4.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yareeh/goodreads-cli/releases/download/v1.4.4/goodreads-cli_darwin_amd64.tar.gz"
-      sha256 "3b87b58cf1b175994a6cc58be1cf7fd1f1b364697f57bac15945e2e0c74b16af"
+      url "https://github.com/yareeh/goodreads-cli/releases/download/v1.4.5/goodreads-cli_darwin_amd64.tar.gz"
+      sha256 "905448237d8d7ef2aeeb68d721ebd1b6954318b994eec5c671022bb1f87c7ba5"
 
       define_method(:install) do
         bin.install "goodreads-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yareeh/goodreads-cli/releases/download/v1.4.4/goodreads-cli_darwin_arm64.tar.gz"
-      sha256 "97c332b816390470b551764eeb9d00023e6f9dec28d1f37ac4e35b7d7f3e426f"
+      url "https://github.com/yareeh/goodreads-cli/releases/download/v1.4.5/goodreads-cli_darwin_arm64.tar.gz"
+      sha256 "779d599c1268b26cc2ddb098692e80f112e28bd91e6d3459f2c3f2d1ca2e1aa0"
 
       define_method(:install) do
         bin.install "goodreads-cli"
@@ -29,15 +29,15 @@ class GoodreadsCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yareeh/goodreads-cli/releases/download/v1.4.4/goodreads-cli_linux_amd64.tar.gz"
-      sha256 "6a33980439695543b5ad6c05365ce9cd0eb7cc9aeac806952a659a1c0e48120a"
+      url "https://github.com/yareeh/goodreads-cli/releases/download/v1.4.5/goodreads-cli_linux_amd64.tar.gz"
+      sha256 "ec026daeed5bc5e0a97f66b287723798fbd0cbaf3566dae97e54b11176d26aaa"
       define_method(:install) do
         bin.install "goodreads-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yareeh/goodreads-cli/releases/download/v1.4.4/goodreads-cli_linux_arm64.tar.gz"
-      sha256 "b4daf30aaf2fee26339b5fe5b52b6147cbe41a7b75a4903a18c0fae673acd1c8"
+      url "https://github.com/yareeh/goodreads-cli/releases/download/v1.4.5/goodreads-cli_linux_arm64.tar.gz"
+      sha256 "157a334ac579b5228c32e00283b5a0b8adb42846afd6225b33d7a0f6650847c2"
       define_method(:install) do
         bin.install "goodreads-cli"
       end
