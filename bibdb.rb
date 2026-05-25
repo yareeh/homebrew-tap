@@ -5,21 +5,21 @@
 class Bibdb < Formula
   desc "Git-backed BibTeX database manager"
   homepage "https://github.com/yareeh/bibdb"
-  version "1.4.1"
+  version "1.4.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yareeh/bibdb/releases/download/v1.4.1/bibdb_darwin_amd64.tar.gz"
-      sha256 "ff246ff140c366f36df6d1a95eedab27721ca94f5d65c5bb7f932f70ea35788e"
+      url "https://github.com/yareeh/bibdb/releases/download/v1.4.2/bibdb_darwin_amd64.tar.gz"
+      sha256 "f83b6f720ce9011f92fa16330241785291e64c516e836228adc7fc845e3d0510"
 
       define_method(:install) do
         bin.install "bibdb"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yareeh/bibdb/releases/download/v1.4.1/bibdb_darwin_arm64.tar.gz"
-      sha256 "060c9f2a259d4ae73de0e0e201cd08448aa17da1e1088e8116a53fb44378e136"
+      url "https://github.com/yareeh/bibdb/releases/download/v1.4.2/bibdb_darwin_arm64.tar.gz"
+      sha256 "0a9e36ea2f1f753303eefe96cbbb418cff7470a6eb677053c82e726ca54eff43"
 
       define_method(:install) do
         bin.install "bibdb"
@@ -29,15 +29,15 @@ class Bibdb < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yareeh/bibdb/releases/download/v1.4.1/bibdb_linux_amd64.tar.gz"
-      sha256 "9c241c46581b7920e88b49fd17809cd4b6f5c6011efe99f5dae4d10edbf40ef7"
+      url "https://github.com/yareeh/bibdb/releases/download/v1.4.2/bibdb_linux_amd64.tar.gz"
+      sha256 "52477063ac7fba2cb23bfedc98b2671ce2bc4d060a9de4e1d2f1ce8437382744"
       define_method(:install) do
         bin.install "bibdb"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yareeh/bibdb/releases/download/v1.4.1/bibdb_linux_arm64.tar.gz"
-      sha256 "f8e714781e050db65017cf711f8639a7e01d6508b374e8b66e9c58f354857727"
+      url "https://github.com/yareeh/bibdb/releases/download/v1.4.2/bibdb_linux_arm64.tar.gz"
+      sha256 "9a0a4ec63c3a585b5d084e082227902ab1c460a127c9074e907c49278197f2a2"
       define_method(:install) do
         bin.install "bibdb"
       end
